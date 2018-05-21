@@ -1,4 +1,4 @@
-package me.xtrm.E_xTrM.ui.clickgui.meilleurquelancien;
+package me.xtrm.ClickGUI;
 
 import java.io.IOException;
 import java.util.ArrayList;
