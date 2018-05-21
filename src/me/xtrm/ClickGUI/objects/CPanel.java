@@ -54,6 +54,14 @@ public class CPanel {
 		Minecraft.getMinecraft().fontRendererObj.drawStringWithShadow(extended ? "-" : "+", x + width - 10, y + 3, 0xFFFFFF);
 		
 		updateMBCoords();
+
+		if(this.extended){
+			for(MButton mb : elements){
+				if(mb.visible){
+					mb.drawScreen(mouseX, mouseY, partialTicks);
+				}
+			}
+		}
 	}
 	
 	/**

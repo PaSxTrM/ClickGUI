@@ -8,15 +8,14 @@ import your.Client.module.Module;
 public class MButton {
 	
 	public int x, y, width, height;
-	public boolean extended;
-	
+	public boolean extended, visible;
+
 	public ArrayList<EObject> elements;
 	
 	public Module module;
-
 	public CPanel parent;
 
-	public MButton(Module module, int x, int y, CPanel parent) {
+	public MButton(Module module, int width, int height, CPanel parent) {
 		elements = new ArrayList<EObject>();
 		
 		this.x = 0;
