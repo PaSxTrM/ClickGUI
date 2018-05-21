@@ -3,8 +3,9 @@ package me.xtrm.E_xTrM.ui.clickgui.meilleurquelancien;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import me.xtrm.E_xTrM.module.Module.Category;
-import me.xtrm.E_xTrM.ui.clickgui.meilleurquelancien.objects.CPanel;
+import your.Client.module.Category;
+import your.Client.clickgui.objects.CPanel;
+
 import net.minecraft.client.gui.GuiScreen;
 
 public class ClickGUI extends GuiScreen {

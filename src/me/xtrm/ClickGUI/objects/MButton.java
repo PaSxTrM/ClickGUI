@@ -3,8 +3,8 @@ package me.xtrm.E_xTrM.ui.clickgui.meilleurquelancien.objects;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import me.xtrm.E_xTrM.module.Module;
-import me.xtrm.E_xTrM.ui.clickgui.meilleurquelancien.ClickGUI;
+import your.Client.module.Module;
+import your.Client.clickgui.ClickGUI;
 
 public class MButton {
 	

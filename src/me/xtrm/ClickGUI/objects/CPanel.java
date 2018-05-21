@@ -3,10 +3,12 @@ package me.xtrm.E_xTrM.ui.clickgui.meilleurquelancien.objects;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import me.xtrm.E_xTrM.module.Module.Category;
-import me.xtrm.E_xTrM.ui.clickgui.meilleurquelancien.ClickGUI;
-import me.xtrm.E_xTrM.utils.ColorUtil;
-import me.xtrm.E_xTrM.utils.Wrapper;
+import your.Client.module.Category;
+import your.Client.clickgui.ClickGUI;
+
+import me.xtrm.ClickGUI.utils.ColorUtils;
+
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 
 public class CPanel {
@@ -39,12 +41,12 @@ public class CPanel {
 	}
 	
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
-		Gui.drawRect(x, y, x + width, y + height, ColorUtil.getClickGUIColor().getRGB());
+		Gui.drawRect(x, y, x + width, y + height, ColorUtils.getClickGUIColor().getRGB());
 		
-		String smh = Character.toUpperCase(cat.name().charAt(0)) + cat.name().toLowerCase().substring(1);
-		Wrapper.fr.drawStringWithShadow(smh, x + 3, y + 3, 0xFFFFFF);
+		String name = Character.toUpperCase(cat.name().charAt(0)) + cat.name().toLowerCase().substring(1);
+		Minecraft.getMinecraft().fr.drawStringWithShadow(name, x + 3, y + 3, 0xFFFFFF);
 		
-		Wrapper.fr.drawStringWithShadow(extended ? "-" : "+", x + width - 10, y + 3, 0xFFFFFF);
+		Minecraft.getMinecraft().fr.drawStringWithShadow(extended ? "-" : "+", x + width - 10, y + 3, 0xFFFFFF);
 	}
 
 	public void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
