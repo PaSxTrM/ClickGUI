@@ -19,10 +19,8 @@ public class ClickGUI extends GuiScreen {
 		int x = 5;
 		int y = 10;
 		for(Category cat : Category.values()) {
-			if(cat != Category.DEV && cat != Category.GUI) {
-				CPanel cp;
-				elements.add(cp = new CPanel(cat, x, y, 90, 15, this));
-				
+			if(cat != Category.GUI /* && cat != Category.UNWANTED */) { // Put here the categories you don't want to be displayed
+				elements.add(new CPanel(cat, x, y, 90, 15, this));				
 				x += 95;
 			}
 		}
