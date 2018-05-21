@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import your.Client.module.Category;
-import your.Client.clickgui.objects.CPanel;
+
+import me.xtrm.ClickGUI.objects.CPanel;
 
 import net.minecraft.client.gui.GuiScreen;
 
