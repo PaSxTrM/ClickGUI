@@ -15,8 +15,8 @@ public class MButton {
 	public Module module;
 
 	public CPanel parent;
-	
-	public MButton(Module module, int width, int height, CPanel parent) {
+
+	public MButton(Module module, int x, int y, CPanel parent) {
 		elements = new ArrayList<EObject>();
 		
 		this.x = 0;
