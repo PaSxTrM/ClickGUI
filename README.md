@@ -1,2 +1,2 @@
 # ClickGUI
-A simple Animated ClickGUI for Minecraft Clients
+A simple WIP Animated ClickGUI for Minecraft Clients
